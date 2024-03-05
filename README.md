@@ -53,3 +53,19 @@ Marque esse projeto com uma estrela 🌟 e acesse o nosso [grupo oficial no What
     3. agora o projeto vai estar executando na :8080 então vá no navegador e tente acessar o http://localhost:8080/
   A unica coisa, é que o projeto não vai reiniciar quando voce alterar algum código, vai precisar dar um F5 na página toda vez que alterar algo
 
+
+# Processo do projeto
+
+- Web Streams - conceito mais importante da aula
+- Stream - processamento sob demanda
+
+Resumo:
+- Baixa um arquivo MP4 sob demanda, que pode ser gigante
+- Demultiplexa com o MP4box, para obter informações do arquivo e quebrá-lo em fragmentos
+- Encoda cada fragmento com o Videoencoder, pra transformar esse fragmento de alta resolução para baixa resolução
+- Multiplexa cada fragmento, para gerar pequenos vídeos do WEBM
+- Faz o upload dos fragmentos em WEBM, para o servidor receber esses arquivos e pode fazer esse pós processamento para juntar os fragmentos em um só
+- Decoda cada fragmento com o Videodecoder para renderizar o vídeo transformando em um elemento html conforme ele for sendo processado
+
+# Cool stuff
+https://transform.tools/json-to-jsdoc
